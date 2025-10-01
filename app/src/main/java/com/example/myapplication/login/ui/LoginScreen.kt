@@ -3,6 +3,7 @@ package com.example.myapplication.login.ui
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
@@ -36,5 +37,8 @@ fun HeaderImage() {
         painter = painterResource(id = R.drawable.foto_inevh),
         contentDescription = "Header",
         modifier = Modifier)
+    Spacer(
+        modifier = Modifier.padding(16.dp)
+    )
 
 }
