@@ -1,4 +1,4 @@
 package com.example.myapplication.login.ui
 
-class LoginViewModel {
-}
+import androidx.compose.runtime.Composable
+
