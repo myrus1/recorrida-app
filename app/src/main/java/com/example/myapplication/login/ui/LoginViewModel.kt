@@ -17,7 +17,9 @@ class LoginViewModel : ViewModel(){
     val  password: LiveData <String> = _password
 
     private val _loginEnable = MutableLiveData<Boolean>()
+
     val  loginEnable: LiveData <Boolean> = _loginEnable
+
     fun onLoginChanged(user: String, password: String) {
         _user.value=user
         _password.value=password

@@ -1,5 +1,7 @@
 package com.example.myapplication
+package com.example.myapplication.login.ui.LoginViewModel.kt
 
+import com.example.myapplication.login.ui
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
 
@@ -21,4 +23,19 @@ class ExampleInstrumentedTest {
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
         assertEquals("com.example.myapplication", appContext.packageName)
     }
+
+    /***
+    @Test
+    fun () {
+        // Context of the app under test.
+        val appContext = InstrumentationRegistry.getInstrumentation().targetContext
+        assertEquals("com.example.myapplication", appContext.packageName)
+    }
+
+    fun onLoginChanged(user: String, password: String) {
+        user.value=user
+        password.value=password
+        loginEnable.value= isValidEmail(user) && isValidPassword(password)
+    }
+    ***/
 }
