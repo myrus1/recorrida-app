@@ -41,6 +41,15 @@ android {
 }
 
 dependencies {
+    // Testing - Unitarios
+    testImplementation("junit:junit:4.13.2")
+    testImplementation("io.mockk:mockk:1.14.6")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
+
+    // Testing - Instrumentados (Android)
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    androidTestImplementation("io.mockk:mockk-android:1.13.9")
 
     implementation("androidx.compose.runtime:runtime-livedata:1.9.2")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.9.4")
